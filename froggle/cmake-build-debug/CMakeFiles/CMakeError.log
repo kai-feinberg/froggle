@@ -1,0 +1,14 @@
+Performing C++ SOURCE FILE Test LDFLAG_FSANITIZE_UNDEFINED_OKAY failed with the following output:
+Change Dir: C:/Users/kaiwf/OneDrive/Desktop/Past Quarters/Fall22/CS 211/froggle/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe cmTC_6c5a1 && [1/2] Building CXX object CMakeFiles/cmTC_6c5a1.dir/src.cxx.obj
+[2/2] Linking CXX executable cmTC_6c5a1.exe
+FAILED: cmTC_6c5a1.exe 
+cmd.exe /C "cd . && C:\MinGW\bin\c++.exe -fsanitize=undefined  CMakeFiles/cmTC_6c5a1.dir/src.cxx.obj -o cmTC_6c5a1.exe -Wl,--out-implib,libcmTC_6c5a1.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/ld.exe: cannot find -lubsan
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(){}
